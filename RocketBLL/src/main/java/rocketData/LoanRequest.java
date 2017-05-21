@@ -11,11 +11,9 @@ public class LoanRequest implements Serializable {
 	private int iDownPayment;
 	private double dPayment;
 	
-	//	TODO - RocketBLL.LoanRequest
-	//			missing attributes...
-	//			Income
-	//			Expenses
-	//			Add these attributes to the class... add getters and setters.
+	private int	Income;
+	private int Expenses;
+
 	
 	public LoanRequest() {
 		super();
@@ -55,6 +53,18 @@ public class LoanRequest implements Serializable {
 	}
 	public void setdPayment(double dPayment) {
 		this.dPayment = dPayment;
+	}
+	public int getIncome() {
+		return Income;
+	}
+	public void setIncome(int income) {
+		Income = income;
+	}
+	public int getExpenses() {
+		return Expenses;
+	}
+	public void setExpenses(int expenses) {
+		Expenses = expenses;
 	}
 	
 	
